@@ -5,7 +5,6 @@ import { minify } from "html-minifier-terser"
 import { resolve } from "path"
 import { data } from "./src/data/index.js"
 
-// Minifica el HTML final (solo en build)
 const minificarHtml = () => ({
   name: "minificar-html",
   apply: "build",
@@ -23,6 +22,7 @@ const minificarHtml = () => ({
 })
 
 export default defineConfig(({ command }) => ({
+  base: "/portafolio/",
   plugins: [
     handlebars({
       partialDirectory: resolve("src/components"),
@@ -32,7 +32,6 @@ export default defineConfig(({ command }) => ({
   ],
   css: {
     postcss: {
-      // El purgado solo se aplica al hacer build
       plugins:
         command === "build"
           ? [
