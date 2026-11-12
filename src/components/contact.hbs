@@ -1,0 +1,14 @@
+<section class="seccion seccion-alt" id="contacto">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p class="contacto-texto">Si quieres hablar de un proyecto o de una oportunidad, escribeme.</p>
+    <ul class="contacto-lista">
+      {{#each contactos}}
+      <li>
+        <span class="contacto-medio">{{medio}}</span>
+        <a href="{{url}}">{{valor}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

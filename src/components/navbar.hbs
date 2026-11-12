@@ -1,0 +1,11 @@
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a class="navbar-logo" href="#inicio">{{nombre}}</a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+    <nav class="nav-links" aria-label="Principal">
+      {{#each enlaces}}
+      <a href="#{{id}}">{{texto}}</a>
+      {{/each}}
+    </nav>
+  </div>
+</header>

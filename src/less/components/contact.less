@@ -1,0 +1,21 @@
+.contacto-texto {
+  color: @secundary-text-color;
+  margin-bottom: 1.5rem;
+}
+
+.contacto-lista li {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid @border-color;
+
+  .contacto-medio {
+    width: 6rem;
+    color: @secundary-text-color;
+  }
+
+  @media (max-width: @tablet) {
+    flex-direction: column;
+    gap: 0;
+  }
+}

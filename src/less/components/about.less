@@ -1,0 +1,35 @@
+.about {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 3rem;
+
+  .about-texto p {
+    max-width: 60ch;
+    color: @secundary-text-color;
+    margin-bottom: 1rem;
+  }
+
+  .about-datos {
+    align-self: start;
+    border-left: 2px solid @border-color;
+    padding-left: 1.5rem;
+  }
+
+  .dato {
+    margin-bottom: 1.25rem;
+
+    dt {
+      font-size: 0.9rem;
+      color: @secundary-text-color;
+    }
+
+    dd {
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: @tablet) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

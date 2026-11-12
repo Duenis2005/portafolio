@@ -1,0 +1,18 @@
+<section class="seccion" id="sobre-mi">
+  <div class="container about">
+    <div class="about-texto">
+      <h2>Sobre mi</h2>
+      {{#each sobre}}
+      <p>{{this}}</p>
+      {{/each}}
+    </div>
+    <dl class="about-datos">
+      {{#each datos}}
+      <div class="dato">
+        <dt>{{etiqueta}}</dt>
+        <dd>{{valor}}</dd>
+      </div>
+      {{/each}}
+    </dl>
+  </div>
+</section>

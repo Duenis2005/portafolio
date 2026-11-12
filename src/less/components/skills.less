@@ -1,0 +1,35 @@
+.skill-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid @border-color;
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    color: @secundary-text-color;
+  }
+
+  .skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-content: flex-start;
+  }
+
+  .skill-items li {
+    padding: 0.3rem 0.8rem;
+    border: 1px solid @border-color;
+    border-radius: 999px;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: @tablet) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

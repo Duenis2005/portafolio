@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  background: @primary-bg-color;
+  color: @primary-text-color;
+  font-family: @font-body;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+  font-family: @font-title;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: @accent-color;
+}
+
+ul {
+  list-style: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid @accent-color;
+  outline-offset: 3px;
+}
+
+.seccion {
+  .seccion-espacio();
+}
+
+.seccion-alt {
+  background: @secundary-bg-color;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid @accent-color;
+
+  &.boton-primario {
+    background: @accent-color;
+    color: @primary-bg-color;
+  }
+
+  &.boton-secundario {
+    color: @accent-color;
+  }
+}
